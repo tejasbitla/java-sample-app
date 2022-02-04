@@ -61,7 +61,6 @@ pipeline {
                 echo "Running Deployment on Dev"
             }
         }  
-        
         stage("Deploy - UAT"){
             steps{
                 echo "Running Deployment on UAT"
@@ -71,7 +70,6 @@ pipeline {
             steps{
                 echo "Running Deployment on PRD"
             }
-        } 
-    
+        }
     }
 }
