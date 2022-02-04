@@ -15,7 +15,7 @@ pipeline {
         stage("Build Source Code"){
             steps {
                     sh "mvn install"
-                    sh "mv target/*.jar target/demoApp-${BUILD_NUMBER}.jar"
+                    sh "mv target/jb-hello-world*.jar target/demoApp-${BUILD_NUMBER}.jar"
             }
         }
         stage("Run Unit-Tests"){
