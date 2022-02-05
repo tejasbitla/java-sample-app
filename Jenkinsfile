@@ -13,7 +13,8 @@ pipeline {
                 script {
                     //echo 'Pulling...' + BRANCH_NAME
                     echo 'Printing Repo Name: ' + git_repo_url
-                    echo "Printing All Env Vars: " + printenv
+                   // echo "Printing All Env Vars: " + printenv
+                    sh 'printenv'
                 }
               
             }
