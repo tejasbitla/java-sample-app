@@ -10,6 +10,7 @@ pipeline {
                 // Clean before build
                 cleanWs()
                 git url: "${git_repo_url}", branch: "${git_repo_br}"
+                echo 'Pulling...' + env.BRANCH_NAME
             }
         }
         stage("Build Source Code"){
