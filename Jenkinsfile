@@ -11,7 +11,7 @@ pipeline {
                 cleanWs()
                 git url: "${git_repo_url}", branch: "${git_repo_br}"
                 script {
-                    //echo 'Pulling...' + BRANCH_NAME
+                    echo 'Pulling...' + GIT_BRANCH
                     echo 'Printing Repo Name: ' + git_repo_url
                    // echo "Printing All Env Vars: " + printenv
                     sh 'printenv'
