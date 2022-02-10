@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent {label 'linux-ubuntu'}
     environment {
         git_repo_url = "https://github.com/crazy4devops/java-sample-app.git"
         git_repo_br = "feature/batch-II"
