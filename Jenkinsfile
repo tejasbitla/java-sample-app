@@ -9,14 +9,14 @@ pipeline{
         stage("Build Source Code"){
             steps{
                 echo "Building Source Code"
-                sh "mvn install"
+            
             }
         }
 
         stage("Run UNIT-Tests"){
             steps{
                 echo "Runnning Unit Tests"
-                sh "mvn test"
+              
             }
         }
 
